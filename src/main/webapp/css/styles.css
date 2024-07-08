@@ -29,3 +29,43 @@ input[type=submit] {
 .error {
     color: red;
 }
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.nav-li {
+    float: right;
+}
+
+.nav-li.float-left {
+    float: left;
+}
+
+.nav-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav-li a:hover:not(.active) {
+    background-color: dimgray;
+}
+
+.active {
+    background-color: green;
+}
+
+.default-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+body {
+    margin: 0;
+}
