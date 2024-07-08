@@ -69,3 +69,23 @@ input[type=submit] {
 body {
     margin: 0;
 }
+
+.slides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+}

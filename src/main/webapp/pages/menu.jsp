@@ -15,6 +15,8 @@
                 <a class="active" href="<%=JspConst.HOME_JSP%>">Home</a></li>
             <li class="nav-li">
                 <a href="<%=AppConst.LOGOUT_CONTROLLER%>">Logout</a></li>
+            <li class="nav-li float-left">
+                <a href="<%=AppConst.TV_CONTROLLER%>">Tv</a></li>
         </c:otherwise>
     </c:choose>
 </ul>

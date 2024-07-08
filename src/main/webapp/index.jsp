@@ -9,6 +9,8 @@
 </head>
 <body>
     <jsp:include page="<%=JspConst.MENU_JSP%>"/>
-    <h2>Hello World!</h2>
+    <jsp:include page="/pages/slider/slider.html"/>
+    <h1 style="text-align: center;">Welcome to our shop</h1>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
