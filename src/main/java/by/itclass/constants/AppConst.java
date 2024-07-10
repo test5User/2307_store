@@ -5,5 +5,6 @@ public class AppConst {
     public static final String LOGOUT_CONTROLLER = "/logout";
     public static final String REGISTRATION_CONTROLLER = "/registration";
     public static final String TV_CONTROLLER = "/tv";
+    public static final String LAPTOP_CONTROLLER = "/laptop";
 
 }

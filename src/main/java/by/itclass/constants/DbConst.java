@@ -9,6 +9,8 @@ public class DbConst {
 
     public static final String VENDOR_COL = "vendor";
     public static final String MODEL_COL = "model";
+    public static final String CPU_COL = "cpu";
     public static final String SCREEN_COL = "screenSize";
+    public static final String MEMORY_COL = "memorySize";
     public static final String PRICE_COL = "price";
 }

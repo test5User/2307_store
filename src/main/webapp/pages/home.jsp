@@ -9,10 +9,7 @@
 </head>
 <body>
     <jsp:include page="<%=JspConst.MENU_JSP%>"/>
-    <h2>User Info</h2>
-    <p>Name: ${user.name}</p>
-    <p>Email: ${user.email}</p>
-    <p>Login: ${user.login}</p>
-    <p>Password: ${user.password}</p>
+    <jsp:include page="/pages/slider/slider.html"/>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
