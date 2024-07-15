@@ -163,3 +163,28 @@ body {
     font-family: auto;
     margin: 0;
 }
+
+.stock-item-box input[type=submit] {
+    width: 200px;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.cart-item-container {
+    height: 90px;
+}
+
+.cart-img {
+    height: 70px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px 50px 10px 0px;
+}
+
+.cart-text {
+    margin: 0 0 10px;
+}
