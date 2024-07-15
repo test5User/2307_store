@@ -11,9 +11,13 @@ public class JspConst {
     public static final String PRICE_FROM_PARAM = "priceFrom";
     public static final String PRICE_TO_PARAM = "priceTo";
 
+    public static final String CPU_PARAM = "cpu";
+    public static final String MEMORY_PARAM = "memorySize";
+
     public static final String MESSAGE_ATTR = "message";
     public static final String USER_ATTR = "user";
     public static final String TVS_ATTR = "tvs";
+    public static final String LAPTOPS_ATTR = "laptops";
 
     public static final String BACKGROUND_IMAGE = "/img/background-img.jpg";
 
@@ -23,4 +27,5 @@ public class JspConst {
     public static final String REGISTRATION_JSP = "/pages/registration.jsp";
     public static final String MENU_JSP = "/pages/menu.jsp";
     public static final String TV_PAGE_JSP = "/pages/filters/tv-page.jsp";
+    public static final String LAPTOP_PAGE_JSP = "/pages/filters/laptop-page.jsp";
 }
