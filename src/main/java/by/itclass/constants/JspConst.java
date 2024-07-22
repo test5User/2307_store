@@ -22,6 +22,8 @@ public class JspConst {
     public static final String ITEM_PRICE_PARAM = "itemPrice";
     public static final String QUANTITY_PARAM = "quantity";
 
+    public static final String ADDRESS_PARAM = "address";
+
     public static final String MESSAGE_ATTR = "message";
     public static final String USER_ATTR = "user";
     public static final String TVS_ATTR = "tvs";

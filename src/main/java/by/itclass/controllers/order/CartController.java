@@ -21,8 +21,10 @@ public class CartController extends AbstractController {
         var itemId = Integer.parseInt(req.getParameter(ITEM_ID_PARAM));
         var itemVendor = req.getParameter(ITEM_VENDOR_PARAM);
         var itemModel = req.getParameter(ITEM_MODEL_PARAM);
-        var itemPrice = Double.parseDouble(req.getParameter(ITEM_PRICE_PARAM));
-        var quantity = Integer.parseInt(req.getParameter(QUANTITY_PARAM));
+        var itemPriceParam = req.getParameter(ITEM_PRICE_PARAM);
+        var itemPrice = itemPriceParam != null ? Double.parseDouble(itemPriceParam) : 0;
+        var quantityParam = req.getParameter(QUANTITY_PARAM);
+        var quantity = quantityParam != null ? Integer.parseInt(quantityParam) : 0;
         var item = new OrderItem(itemType, itemId, itemVendor, itemModel, itemPrice, quantity);
         var session = req.getSession();
         var items = cartService.processCart(session, cartAction, item);
