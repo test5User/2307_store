@@ -1,7 +1,9 @@
 package by.itclass.model.dao;
 
 import by.itclass.model.db.ConnectionManager;
+import by.itclass.model.entities.Order;
 import by.itclass.model.entities.OrderItem;
+import by.itclass.model.entities.Receipt;
 import by.itclass.model.entities.User;
 import jakarta.servlet.http.HttpSession;
 
@@ -11,11 +13,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import static by.itclass.constants.DbConst.*;
 import static by.itclass.constants.JspConst.*;
 
 public class OrderDao {
     private static final String INSERT_ORDER = "INSERT INTO orders values (?, ?, ?, ?)";
     private static final String INSERT_ORDER_ITEM = "INSERT INTO orderItem values (?, ?, ?, ?, ?)";
+    private static final String SELECT_ORDER = "SELECT date, address FROM orders WHERE id = ?";
 
     private static OrderDao dao;
 
@@ -72,5 +76,22 @@ public class OrderDao {
         ps.setDouble(4, item.getItemPrice());
         ps.setInt(5, item.getQuantity());
         ps.executeUpdate();
+    }
+
+    public Receipt buildReceipt(String orderId) {
+        var receipt = new Receipt();
+        try (var cn = ConnectionManager.getConnection();
+            var ps = cn.prepareStatement(SELECT_ORDER)){
+            ps.setString(1, orderId);
+            var rs = ps.executeQuery();
+            if (rs.next()) {
+                var date = rs.getString(DATE_COL);
+                var address = rs.getString(ADDRESS_COL);
+                receipt.setOrder(new Order(orderId, date, address));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }

@@ -13,4 +13,7 @@ public class DbConst {
     public static final String SCREEN_COL = "screenSize";
     public static final String MEMORY_COL = "memorySize";
     public static final String PRICE_COL = "price";
+
+    public static final String DATE_COL = "date";
+    public static final String ADDRESS_COL = "address";
 }

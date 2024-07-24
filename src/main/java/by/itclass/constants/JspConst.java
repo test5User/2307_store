@@ -34,6 +34,8 @@ public class JspConst {
 
     public static final String ORDERS_ATTR = "orders";
 
+    public static final String RECEIPT_ATTR = "receipt";
+
     public static final String BACKGROUND_IMAGE = "/img/background-img.jpg";
 
     public static final String LOGIN_JSP = "/pages/login.jsp";
@@ -45,4 +47,5 @@ public class JspConst {
     public static final String LAPTOP_PAGE_JSP = "/pages/filters/laptop-page.jsp";
     public static final String CART_JSP = "/pages/cart.jsp";
     public static final String ORDERS_JSP = "/pages/orders.jsp";
+    public static final String RECEIPT_JSP = "/pages/receipt.jsp";
 }

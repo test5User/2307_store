@@ -22,7 +22,7 @@
             <li class="nav-li">
                 <a href="<%=JspConst.CART_JSP%>">Cart</a></li>
             <li class="nav-li">
-                <a href="<%=%>">Cart</a></li>
+                <a href="<%=AppConst.ORDER_HISTORY_CONTROLLER%>">History</a></li>
         </c:otherwise>
     </c:choose>
 </ul>
