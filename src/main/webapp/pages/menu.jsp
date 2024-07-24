@@ -21,6 +21,8 @@
                 <a href="<%=AppConst.LAPTOP_CONTROLLER%>">Laptop</a></li>
             <li class="nav-li">
                 <a href="<%=JspConst.CART_JSP%>">Cart</a></li>
+            <li class="nav-li">
+                <a href="<%=%>">Cart</a></li>
         </c:otherwise>
     </c:choose>
 </ul>

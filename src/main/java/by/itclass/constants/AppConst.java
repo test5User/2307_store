@@ -8,5 +8,6 @@ public class AppConst {
     public static final String LAPTOP_CONTROLLER = "/laptop";
     public static final String CART_CONTROLLER = "/cart";
     public static final String ORDER_CONTROLLER = "/order";
+    public static final String ORDER_HISTORY_CONTROLLER = "/orderHistory";
 
 }

@@ -30,6 +30,10 @@ public class JspConst {
     public static final String LAPTOPS_ATTR = "laptops";
     public static final String ORDER_ITEMS_ATTR = "orderItems";
 
+    public static final String ORDER_ID_ATTR = "orderId";
+
+    public static final String ORDERS_ATTR = "orders";
+
     public static final String BACKGROUND_IMAGE = "/img/background-img.jpg";
 
     public static final String LOGIN_JSP = "/pages/login.jsp";
@@ -40,4 +44,5 @@ public class JspConst {
     public static final String TV_PAGE_JSP = "/pages/filters/tv-page.jsp";
     public static final String LAPTOP_PAGE_JSP = "/pages/filters/laptop-page.jsp";
     public static final String CART_JSP = "/pages/cart.jsp";
+    public static final String ORDERS_JSP = "/pages/orders.jsp";
 }

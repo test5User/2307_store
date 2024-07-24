@@ -16,6 +16,7 @@ public abstract class AbstractController extends HttpServlet {
     protected LaptopService laptopService;
     protected CartService cartService;
     protected OrderService orderService;
+    protected OrderHistoryService orderHistoryService;
 
     @Override
     public void init() throws ServletException {
@@ -24,6 +25,7 @@ public abstract class AbstractController extends HttpServlet {
         laptopService = LaptopService.getInstance();
         cartService = CartService.getInstance();
         orderService = OrderService.getInstance();
+        orderHistoryService = OrderHistoryService.getInstance();
     }
 
     @Override
