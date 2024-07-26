@@ -11,15 +11,6 @@ import static by.itclass.constants.DbConst.*;
 
 public class LaptopDao {
     public static final String SELECT_ALL_LAPTOP = "SELECT * FROM laptop";
-    private static LaptopDao dao;
-
-    private LaptopDao() {
-        ConnectionManager.init();
-    }
-
-    public static LaptopDao getInstance() {
-        return dao==null ? new LaptopDao() : dao;
-    }
 
     public List<Laptop> selectAllLaptop() {
         var laptops = new ArrayList<Laptop>();

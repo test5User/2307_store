@@ -6,16 +6,11 @@ import by.itclass.model.entities.Order;
 import java.util.List;
 import java.util.Objects;
 
-public class OrderHistoryService {
-    private static OrderHistoryService service;
+public class OrderHistoryService implements Service {
     private OrderHistoryDao dao;
 
     public OrderHistoryService() {
-        dao = OrderHistoryDao.getInstance();
-    }
-
-    public static OrderHistoryService getInstance() {
-        return Objects.isNull(service) ? new OrderHistoryService() : service;
+        dao = new OrderHistoryDao();
     }
 
     public List<Order> getOrders(int userId) {

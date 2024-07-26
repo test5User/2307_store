@@ -8,16 +8,11 @@ import java.util.Map;
 
 import static by.itclass.constants.JspConst.*;
 
-public class TvService {
-    private static TvService service;
+public class TvService implements Service {
     private TvDao dao;
 
-    private TvService() {
-        dao = TvDao.getInstance();
-    }
-
-    public static TvService getInstance() {
-        return service == null ? new TvService() : service;
+    public TvService() {
+        dao = new TvDao();
     }
 
     public List<Tv> getTvs(Map<String, String[]> params) {

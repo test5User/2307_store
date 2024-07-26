@@ -10,17 +10,7 @@ import java.util.List;
 import static by.itclass.constants.DbConst.*;
 
 public class OrderHistoryDao {
-
     private static final String SELECT_ORDERS = "SELECT id, date, address FROM orders WHERE userId = ? ORDER BY id DESC";
-    private static OrderHistoryDao dao;
-
-    public OrderHistoryDao() {
-        ConnectionManager.init();
-    }
-
-    public static OrderHistoryDao getInstance() {
-        return dao == null ? new OrderHistoryDao() : dao;
-    }
 
     public List<Order> selectOrders(int userId) {
         var orders = new ArrayList<Order>();

@@ -13,16 +13,6 @@ public class UserDao {
     private static final String INSERT_USER = "INSERT INTO user(name, email, login, password) values (?, ?, ?, ?)";
     private static final String CHECK_LOGIN = "SELECT id FROM user WHERE login=?";
 
-    private static UserDao dao;
-
-    private UserDao() {
-        ConnectionManager.init();
-    }
-
-    public static UserDao getInstance() {
-        return  dao == null ? new UserDao() : dao;
-    }
-
     public User selectUser(String login, String password) {
         try (var cn = ConnectionManager.getConnection();
             var ps = cn.prepareStatement(SELECT_USER)) {
