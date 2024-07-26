@@ -291,3 +291,17 @@ body {
     margin: 0 0 20px 20px;
     cursor: pointer;
 }
+
+.receipt-container {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 20px;
+    display: inline-block;
+}
+
+.receipt-container .underlined {
+    text-decoration: underline;
+}
